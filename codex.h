@@ -38,7 +38,14 @@ typedef struct s_parameter
 }   t_params;
 
 typedef struct s_sim	t_sim;
-typedef struct s_dongle	t_dongle;
+
+
+typedef struct s_dongle	
+{
+	pthread_mutex_t		lock;
+	int					is_busy;
+	long				last_release;
+}	t_dongle;
 
 typedef struct s_coder
 {

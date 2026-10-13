@@ -6,7 +6,7 @@
 /*   By: enilhan <enilhan@student.42istanbul.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/13 11:21:22 by enilhan           #+#    #+#             */
-/*   Updated: 2026/10/13 11:21:22 by enilhan          ###   ########.fr       */
+/*   Updated: 2026/10/13 21:05:56 by enilhan          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,7 @@
 #include <stdio.h>
 #include <string.h>
 #include <pthread.h>
+#include <stdlib.h>
 
 
 typedef enum e_scheduler

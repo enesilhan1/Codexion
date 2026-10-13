@@ -15,6 +15,7 @@
 
 #include <stdio.h>
 #include <string.h>
+#include <pthread.h>
 
 
 typedef enum e_scheduler
@@ -35,6 +36,21 @@ typedef struct s_parameter
 	int     dongle_cooldown;
 	t_scheduler	scheduler;
 }   t_params;
+
+typedef struct s_sim	t_sim;
+typedef struct s_dongle	t_dongle;
+
+typedef struct s_coder
+{
+	int				id;
+	long			last_compile_start;
+	int				compile_count;
+	t_dongle		*left;
+	t_dongle		*right;
+	pthread_t		thread;
+	pthread_mutex_t	lock;
+	t_sim			*sim;
+}	t_coder;
 
 
 int str_to_int(char *str, int *out);

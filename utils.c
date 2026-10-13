@@ -12,3 +12,8 @@
 
 #include "codex.h"
 
+int	raise_error(char *s)
+{
+	printf("[KO] %s\n", s);
+	return (0);
+}

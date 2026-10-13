@@ -14,6 +14,6 @@
 
 int	raise_error(char *s)
 {
-	printf("[KO] %s\n", s);
-	return (0);
+	fprintf(2, "[KO] %s\n", s);
+	return (1);
 }

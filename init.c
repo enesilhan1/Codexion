@@ -6,8 +6,13 @@
 /*   By: enilhan <enilhan@student.42istanbul.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/13 21:03:02 by enilhan           #+#    #+#             */
-/*   Updated: 2026/10/13 21:03:24 by enilhan          ###   ########.fr       */
+/*   Updated: 2026/10/13 21:07:40 by enilhan          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "codex.h"
+
+int	init_sim(t_sim *sim)
+{
+    
+}

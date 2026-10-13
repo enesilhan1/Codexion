@@ -37,9 +37,6 @@ typedef struct s_parameter
 	t_scheduler	scheduler;
 }   t_params;
 
-typedef struct s_sim	t_sim;
-
-
 typedef struct s_dongle	
 {
 	pthread_mutex_t		lock;
@@ -56,8 +53,20 @@ typedef struct s_coder
 	t_dongle		*right;
 	pthread_t		thread;
 	pthread_mutex_t	lock;
-	t_sim			*sim;
+	struct s_sim	*sim;
 }	t_coder;
+
+typedef struct s_sim
+{
+	t_params		params;
+	long			start_time;
+	t_coder			*coders;
+	t_dongle		*dongles;
+	pthread_mutex_t	log_lock;
+	int				stopped;
+	pthread_mutex_t	stop_lock;
+	pthread_t		monitor;
+}	t_sim;
 
 
 int str_to_int(char *str, int *out);

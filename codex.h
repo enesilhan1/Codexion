@@ -14,6 +14,7 @@
 # define CODEX_H
 
 #include <stdio.h>
+#include <string.h>
 
 
 typedef enum e_scheduler

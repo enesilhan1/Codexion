@@ -15,6 +15,8 @@
 
 #include <stdio.h>
 
+int str_to_int(char *str, int *out);
+
 int	raise_error(char *s);
 
 

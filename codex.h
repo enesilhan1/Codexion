@@ -15,11 +15,6 @@
 
 #include <stdio.h>
 
-int str_to_int(char *str, int *out);
-int	parser(char **av, t_params *params);
-
-int	raise_error(char *s);
-
 
 typedef enum e_scheduler
 {
@@ -39,6 +34,12 @@ typedef struct s_parameter
 	int     dongle_cooldown;
 	t_scheduler	scheduler;
 }   t_params;
+
+
+int str_to_int(char *str, int *out);
+int	parser(char **av, t_params *params);
+
+int	raise_error(char *s);
 
 
 #endif

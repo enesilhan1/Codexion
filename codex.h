@@ -16,6 +16,7 @@
 #include <stdio.h>
 
 int str_to_int(char *str, int *out);
+int	parser(char **av, t_params *params);
 
 int	raise_error(char *s);
 

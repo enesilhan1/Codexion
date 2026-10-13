@@ -6,7 +6,7 @@
 /*   By: enilhan <enilhan@student.42istanbul.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/13 11:21:22 by enilhan           #+#    #+#             */
-/*   Updated: 2026/10/13 21:05:56 by enilhan          ###   ########.fr       */
+/*   Updated: 2026/10/13 21:06:51 by enilhan          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -72,6 +72,8 @@ typedef struct s_sim
 
 int str_to_int(char *str, int *out);
 int	parser(char **av, t_params *params);
+
+int	init_sim(t_sim *sim);
 
 int	raise_error(char *s);
 

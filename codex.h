@@ -13,6 +13,7 @@
 #ifndef CODEX_H
 # define CODEX_H
 
+int	raise_error(char *s);
 
 
 #endif

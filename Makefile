@@ -3,7 +3,7 @@ NAME		= codexion
 CC			= cc
 CFLAGS		= -Wall -Wextra -Werror -pthread
 
-SRCS		= codexion.c parser.c utils.c
+SRCS		= codexion.c parser.c utils.c init.c
 OBJS		= $(SRCS:.c=.o)
 HEADER		= codex.h
 

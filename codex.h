@@ -6,7 +6,7 @@
 /*   By: enilhan <enilhan@student.42istanbul.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/13 11:21:22 by enilhan           #+#    #+#             */
-/*   Updated: 2026/10/13 21:06:51 by enilhan          ###   ########.fr       */
+/*   Updated: 2026/10/14 15:14:27 by enilhan          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -74,6 +74,7 @@ int str_to_int(char *str, int *out);
 int	parser(char **av, t_params *params);
 
 int	init_sim(t_sim *sim);
+void destroy_dongles(t_sim *sim, int k);
 
 int	raise_error(char *s);
 
